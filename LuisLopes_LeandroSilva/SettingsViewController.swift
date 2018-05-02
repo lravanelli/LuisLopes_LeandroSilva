@@ -39,12 +39,12 @@ class SettingsViewController: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        loadStates()
         NotificationCenter.default.addObserver(self, selector: #selector(loadUserDefault), name: NSNotification.Name(rawValue: "Retornou"), object: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        loadStates()
         loadUserDefault()
     }
     
