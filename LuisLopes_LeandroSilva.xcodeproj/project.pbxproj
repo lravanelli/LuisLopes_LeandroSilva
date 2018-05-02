@@ -7,21 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EA51BC46208EAFDD00EA8195 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA51BC45208EAFDD00EA8195 /* AppDelegate.swift */; };
-		EA51BC48208EAFDD00EA8195 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA51BC47208EAFDD00EA8195 /* ViewController.swift */; };
-		EA51BC4B208EAFDD00EA8195 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA51BC49208EAFDD00EA8195 /* Main.storyboard */; };
-		EA51BC4D208EAFDE00EA8195 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA51BC4C208EAFDE00EA8195 /* Assets.xcassets */; };
 		EA51BC50208EAFDE00EA8195 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA51BC4E208EAFDE00EA8195 /* LaunchScreen.storyboard */; };
+		EA51BC5A208EB03500EA8195 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA51BC59208EB03500EA8195 /* Assets.xcassets */; };
+		EA51BC5F208EB07400EA8195 /* UIViewController+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA51BC5E208EB07400EA8195 /* UIViewController+CoreData.swift */; };
+		EA51BC61208EB08500EA8195 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA51BC60208EB08500EA8195 /* Main.storyboard */; };
+		EA51BC6A208EB09E00EA8195 /* ValuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA51BC63208EB09E00EA8195 /* ValuesViewController.swift */; };
+		EA51BC6B208EB09E00EA8195 /* StatesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA51BC64208EB09E00EA8195 /* StatesTableViewCell.swift */; };
+		EA51BC6C208EB09F00EA8195 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA51BC65208EB09E00EA8195 /* ProductViewController.swift */; };
+		EA51BC6D208EB09F00EA8195 /* PurchasesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA51BC66208EB09E00EA8195 /* PurchasesTableViewController.swift */; };
+		EA51BC6E208EB09F00EA8195 /* ProductsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA51BC67208EB09E00EA8195 /* ProductsTableViewCell.swift */; };
+		EA51BC6F208EB09F00EA8195 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA51BC68208EB09E00EA8195 /* SettingsViewController.swift */; };
+		EA51BC72208EB13200EA8195 /* ComprasUSA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA51BC70208EB13200EA8195 /* ComprasUSA.xcdatamodeld */; };
+		EA51BC74208EB55F00EA8195 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EA51BC73208EB55F00EA8195 /* Settings.bundle */; };
+		EA51BC76208EB57900EA8195 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA51BC75208EB57800EA8195 /* AppDelegate.swift */; };
+		EA6103712097802F00A7240D /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6103702097802F00A7240D /* Calculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EA51BC42208EAFDD00EA8195 /* LuisLopes_LeandroSilva.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuisLopes_LeandroSilva.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA51BC45208EAFDD00EA8195 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EA51BC47208EAFDD00EA8195 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EA51BC4A208EAFDD00EA8195 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EA51BC4C208EAFDE00EA8195 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA51BC4F208EAFDE00EA8195 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA51BC51208EAFDE00EA8195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA51BC59208EB03500EA8195 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA51BC5E208EB07400EA8195 /* UIViewController+CoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+CoreData.swift"; sourceTree = "<group>"; };
+		EA51BC60208EB08500EA8195 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		EA51BC63208EB09E00EA8195 /* ValuesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValuesViewController.swift; sourceTree = "<group>"; };
+		EA51BC64208EB09E00EA8195 /* StatesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatesTableViewCell.swift; sourceTree = "<group>"; };
+		EA51BC65208EB09E00EA8195 /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		EA51BC66208EB09E00EA8195 /* PurchasesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchasesTableViewController.swift; sourceTree = "<group>"; };
+		EA51BC67208EB09E00EA8195 /* ProductsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsTableViewCell.swift; sourceTree = "<group>"; };
+		EA51BC68208EB09E00EA8195 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		EA51BC71208EB13200EA8195 /* ComprasUSA.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ComprasUSA.xcdatamodel; sourceTree = "<group>"; };
+		EA51BC73208EB55F00EA8195 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		EA51BC75208EB57800EA8195 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EA6103702097802F00A7240D /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +72,31 @@
 		EA51BC44208EAFDD00EA8195 /* LuisLopes_LeandroSilva */ = {
 			isa = PBXGroup;
 			children = (
-				EA51BC45208EAFDD00EA8195 /* AppDelegate.swift */,
-				EA51BC47208EAFDD00EA8195 /* ViewController.swift */,
-				EA51BC49208EAFDD00EA8195 /* Main.storyboard */,
-				EA51BC4C208EAFDE00EA8195 /* Assets.xcassets */,
+				EA51BC75208EB57800EA8195 /* AppDelegate.swift */,
+				EA51BC5D208EB06200EA8195 /* Extensions */,
+				EA51BC67208EB09E00EA8195 /* ProductsTableViewCell.swift */,
+				EA51BC65208EB09E00EA8195 /* ProductViewController.swift */,
+				EA51BC70208EB13200EA8195 /* ComprasUSA.xcdatamodeld */,
+				EA51BC66208EB09E00EA8195 /* PurchasesTableViewController.swift */,
+				EA51BC68208EB09E00EA8195 /* SettingsViewController.swift */,
+				EA51BC64208EB09E00EA8195 /* StatesTableViewCell.swift */,
+				EA51BC63208EB09E00EA8195 /* ValuesViewController.swift */,
+				EA6103702097802F00A7240D /* Calculator.swift */,
+				EA51BC73208EB55F00EA8195 /* Settings.bundle */,
+				EA51BC60208EB08500EA8195 /* Main.storyboard */,
+				EA51BC59208EB03500EA8195 /* Assets.xcassets */,
 				EA51BC4E208EAFDE00EA8195 /* LaunchScreen.storyboard */,
 				EA51BC51208EAFDE00EA8195 /* Info.plist */,
 			);
 			path = LuisLopes_LeandroSilva;
+			sourceTree = "<group>";
+		};
+		EA51BC5D208EB06200EA8195 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EA51BC5E208EB07400EA8195 /* UIViewController+CoreData.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +131,7 @@
 				TargetAttributes = {
 					EA51BC41208EAFDD00EA8195 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -122,9 +158,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA51BC74208EB55F00EA8195 /* Settings.bundle in Resources */,
+				EA51BC61208EB08500EA8195 /* Main.storyboard in Resources */,
+				EA51BC5A208EB03500EA8195 /* Assets.xcassets in Resources */,
 				EA51BC50208EAFDE00EA8195 /* LaunchScreen.storyboard in Resources */,
-				EA51BC4D208EAFDE00EA8195 /* Assets.xcassets in Resources */,
-				EA51BC4B208EAFDD00EA8195 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +172,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA51BC48208EAFDD00EA8195 /* ViewController.swift in Sources */,
-				EA51BC46208EAFDD00EA8195 /* AppDelegate.swift in Sources */,
+				EA51BC72208EB13200EA8195 /* ComprasUSA.xcdatamodeld in Sources */,
+				EA51BC5F208EB07400EA8195 /* UIViewController+CoreData.swift in Sources */,
+				EA51BC6E208EB09F00EA8195 /* ProductsTableViewCell.swift in Sources */,
+				EA6103712097802F00A7240D /* Calculator.swift in Sources */,
+				EA51BC76208EB57900EA8195 /* AppDelegate.swift in Sources */,
+				EA51BC6D208EB09F00EA8195 /* PurchasesTableViewController.swift in Sources */,
+				EA51BC6A208EB09E00EA8195 /* ValuesViewController.swift in Sources */,
+				EA51BC6C208EB09F00EA8195 /* ProductViewController.swift in Sources */,
+				EA51BC6B208EB09E00EA8195 /* StatesTableViewCell.swift in Sources */,
+				EA51BC6F208EB09F00EA8195 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EA51BC49208EAFDD00EA8195 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EA51BC4A208EAFDD00EA8195 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EA51BC4E208EAFDE00EA8195 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -280,16 +317,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9T6YX78SU9;
 				INFOPLIST_FILE = LuisLopes_LeandroSilva/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "lravanelli.com.br.LuisLopes-LeandroSilva";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -297,8 +338,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9T6YX78SU9;
 				INFOPLIST_FILE = LuisLopes_LeandroSilva/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +350,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "lravanelli.com.br.LuisLopes-LeandroSilva";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -332,6 +376,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EA51BC70208EB13200EA8195 /* ComprasUSA.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EA51BC71208EB13200EA8195 /* ComprasUSA.xcdatamodel */,
+			);
+			currentVersion = EA51BC71208EB13200EA8195 /* ComprasUSA.xcdatamodel */;
+			path = ComprasUSA.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EA51BC3A208EAFDD00EA8195 /* Project object */;
 }
