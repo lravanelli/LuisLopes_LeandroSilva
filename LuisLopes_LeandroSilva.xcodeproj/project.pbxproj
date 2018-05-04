@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA2B355D209BF133006AA49B /* ComprasUSA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA2B355B209BF133006AA49B /* ComprasUSA.xcdatamodeld */; };
 		EA51BC50208EAFDE00EA8195 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA51BC4E208EAFDE00EA8195 /* LaunchScreen.storyboard */; };
 		EA51BC5A208EB03500EA8195 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA51BC59208EB03500EA8195 /* Assets.xcassets */; };
 		EA51BC5F208EB07400EA8195 /* UIViewController+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA51BC5E208EB07400EA8195 /* UIViewController+CoreData.swift */; };
@@ -17,13 +18,13 @@
 		EA51BC6D208EB09F00EA8195 /* PurchasesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA51BC66208EB09E00EA8195 /* PurchasesTableViewController.swift */; };
 		EA51BC6E208EB09F00EA8195 /* ProductsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA51BC67208EB09E00EA8195 /* ProductsTableViewCell.swift */; };
 		EA51BC6F208EB09F00EA8195 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA51BC68208EB09E00EA8195 /* SettingsViewController.swift */; };
-		EA51BC72208EB13200EA8195 /* ComprasUSA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA51BC70208EB13200EA8195 /* ComprasUSA.xcdatamodeld */; };
 		EA51BC74208EB55F00EA8195 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EA51BC73208EB55F00EA8195 /* Settings.bundle */; };
 		EA51BC76208EB57900EA8195 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA51BC75208EB57800EA8195 /* AppDelegate.swift */; };
 		EA6103712097802F00A7240D /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6103702097802F00A7240D /* Calculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA2B355C209BF133006AA49B /* ComprasUSA.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ComprasUSA.xcdatamodel; sourceTree = "<group>"; };
 		EA51BC42208EAFDD00EA8195 /* LuisLopes_LeandroSilva.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuisLopes_LeandroSilva.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA51BC4F208EAFDE00EA8195 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA51BC51208EAFDE00EA8195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -36,7 +37,6 @@
 		EA51BC66208EB09E00EA8195 /* PurchasesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchasesTableViewController.swift; sourceTree = "<group>"; };
 		EA51BC67208EB09E00EA8195 /* ProductsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsTableViewCell.swift; sourceTree = "<group>"; };
 		EA51BC68208EB09E00EA8195 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		EA51BC71208EB13200EA8195 /* ComprasUSA.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ComprasUSA.xcdatamodel; sourceTree = "<group>"; };
 		EA51BC73208EB55F00EA8195 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		EA51BC75208EB57800EA8195 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA6103702097802F00A7240D /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
@@ -73,17 +73,14 @@
 			isa = PBXGroup;
 			children = (
 				EA51BC75208EB57800EA8195 /* AppDelegate.swift */,
+				EADAA67E209BB3EC00C943C4 /* Settings */,
 				EA51BC5D208EB06200EA8195 /* Extensions */,
-				EA51BC67208EB09E00EA8195 /* ProductsTableViewCell.swift */,
-				EA51BC65208EB09E00EA8195 /* ProductViewController.swift */,
-				EA51BC70208EB13200EA8195 /* ComprasUSA.xcdatamodeld */,
-				EA51BC66208EB09E00EA8195 /* PurchasesTableViewController.swift */,
-				EA51BC68208EB09E00EA8195 /* SettingsViewController.swift */,
-				EA51BC64208EB09E00EA8195 /* StatesTableViewCell.swift */,
-				EA51BC63208EB09E00EA8195 /* ValuesViewController.swift */,
-				EA6103702097802F00A7240D /* Calculator.swift */,
+				EADAA67B209BB39B00C943C4 /* Product */,
+				EADAA67C209BB3B900C943C4 /* State */,
+				EADAA67D209BB3D500C943C4 /* Values */,
 				EA51BC73208EB55F00EA8195 /* Settings.bundle */,
 				EA51BC60208EB08500EA8195 /* Main.storyboard */,
+				EA2B355B209BF133006AA49B /* ComprasUSA.xcdatamodeld */,
 				EA51BC59208EB03500EA8195 /* Assets.xcassets */,
 				EA51BC4E208EAFDE00EA8195 /* LaunchScreen.storyboard */,
 				EA51BC51208EAFDE00EA8195 /* Info.plist */,
@@ -97,6 +94,41 @@
 				EA51BC5E208EB07400EA8195 /* UIViewController+CoreData.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EADAA67B209BB39B00C943C4 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				EA51BC67208EB09E00EA8195 /* ProductsTableViewCell.swift */,
+				EA51BC65208EB09E00EA8195 /* ProductViewController.swift */,
+				EA51BC66208EB09E00EA8195 /* PurchasesTableViewController.swift */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		EADAA67C209BB3B900C943C4 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				EA51BC64208EB09E00EA8195 /* StatesTableViewCell.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		EADAA67D209BB3D500C943C4 /* Values */ = {
+			isa = PBXGroup;
+			children = (
+				EA51BC63208EB09E00EA8195 /* ValuesViewController.swift */,
+				EA6103702097802F00A7240D /* Calculator.swift */,
+			);
+			path = Values;
+			sourceTree = "<group>";
+		};
+		EADAA67E209BB3EC00C943C4 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				EA51BC68208EB09E00EA8195 /* SettingsViewController.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,7 +204,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA51BC72208EB13200EA8195 /* ComprasUSA.xcdatamodeld in Sources */,
 				EA51BC5F208EB07400EA8195 /* UIViewController+CoreData.swift in Sources */,
 				EA51BC6E208EB09F00EA8195 /* ProductsTableViewCell.swift in Sources */,
 				EA6103712097802F00A7240D /* Calculator.swift in Sources */,
@@ -182,6 +213,7 @@
 				EA51BC6C208EB09F00EA8195 /* ProductViewController.swift in Sources */,
 				EA51BC6B208EB09E00EA8195 /* StatesTableViewCell.swift in Sources */,
 				EA51BC6F208EB09F00EA8195 /* SettingsViewController.swift in Sources */,
+				EA2B355D209BF133006AA49B /* ComprasUSA.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,12 +410,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		EA51BC70208EB13200EA8195 /* ComprasUSA.xcdatamodeld */ = {
+		EA2B355B209BF133006AA49B /* ComprasUSA.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				EA51BC71208EB13200EA8195 /* ComprasUSA.xcdatamodel */,
+				EA2B355C209BF133006AA49B /* ComprasUSA.xcdatamodel */,
 			);
-			currentVersion = EA51BC71208EB13200EA8195 /* ComprasUSA.xcdatamodel */;
+			currentVersion = EA2B355C209BF133006AA49B /* ComprasUSA.xcdatamodel */;
 			path = ComprasUSA.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

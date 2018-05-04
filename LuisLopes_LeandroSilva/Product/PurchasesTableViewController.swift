@@ -32,7 +32,9 @@ class PurchasesTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "editSegue" {
             if let vc = segue.destination as? ProductViewController {
-                vc.product = fetchedResultController.object(at: tableView.indexPathForSelectedRow!)
+                if let indexPath = tableView.indexPathForSelectedRow {
+                    vc.product = fetchedResultController.object(at: indexPath)
+                }
             }
         }
     }

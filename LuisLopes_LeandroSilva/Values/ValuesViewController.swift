@@ -48,6 +48,17 @@ class ValuesViewController: UIViewController {
         guard let sIOF = UserDefaults.standard.string(forKey: "iof"), let iof = nFormatter.number(from: sIOF)?.doubleValue else {return}
         
         
+//        if products.isEmpty == false {
+//            for Product in products {
+//                if let states = Product.states {
+//                    for state in states.allObjects {
+//                        let tax = (state as! State).tax
+//                        totalUS += Product.value
+//                        totalRS += calculator.calculate(productValue: Product.value, tax: tax/100, card: Product.card, iof: iof/100, dolar: dolar)
+//                    }
+//                }
+//            }
+//        }
         if products.isEmpty == false {
             for Product in products {
                 guard let tax = Product.states?.tax else {return}

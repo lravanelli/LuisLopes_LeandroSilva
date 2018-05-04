@@ -30,6 +30,7 @@ class ProductViewController: UIViewController {
         formatter.numberStyle = .decimal
         formatter.minimumFractionDigits = 2
         formatter.decimalSeparator = Locale.current.decimalSeparator
+        formatter.usesGroupingSeparator = false
         return formatter
     }()
     
@@ -40,6 +41,7 @@ class ProductViewController: UIViewController {
             tfName.text = product.name
             if let state = product.states {
                 tfState.text = state.name
+//                tfState.text = state.map({($0 as! State).name!}).joined(separator: "")
             }
             tfValue.text = nFormatter.string(from: product.value as NSNumber)
             swCard.isOn = product.card
@@ -126,6 +128,8 @@ class ProductViewController: UIViewController {
                 product.card = swCard.isOn
                 
                 if let row = states.index(where: {$0.name == tfState.text!}) {
+//                    let state = states[row]
+//                    product.addToStates(state)
                     product.states = states[row]
                 }
                 
@@ -140,10 +144,10 @@ class ProductViewController: UIViewController {
                 goBack()
             } else {
                 if let title = btAddUpdate.titleLabel?.text! {
-                let alert = UIAlertController(title: "\(title) PRODUTO", message: "Valor inválido", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                self.present(alert, animated: true, completion: nil)
-            }
+                    let alert = UIAlertController(title: "\(title) PRODUTO", message: "Valor inválido", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
+                }
             }
         }
     }
@@ -165,6 +169,15 @@ class ProductViewController: UIViewController {
             if let row = states.index(where: {$0.name == product.states?.name!}) {
                 pickerView.selectRow(row, inComponent: 0, animated: false)
             }
+            
+//            if let statesProduct = product.states {
+//                for state in statesProduct.allObjects {
+//                    let name = (state as! State).name
+//                    if let row = states.index(where: {$0.name == name}) {
+//                        pickerView.selectRow(row, inComponent: 0, animated: false)
+//                    }
+//                }
+//            }
         }
     }
     
