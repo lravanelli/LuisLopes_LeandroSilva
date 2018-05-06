@@ -30,7 +30,7 @@ class ValuesViewController: UIViewController {
     // MARK: - Super Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        NotificationCenter.default.addObserver(self, selector: #selector(calculateValues), name: NSNotification.Name(rawValue: "Retornou"), object: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,36 +41,7 @@ class ValuesViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         loadProducts()
-        var totalUS = 0.0
-        var totalRS = 0.0
-        nFormatter.decimalSeparator = Locale.current.decimalSeparator
-        guard let sDolar = UserDefaults.standard.string(forKey: "dolar"), let dolar = nFormatter.number(from: sDolar)?.doubleValue else {return}
-        guard let sIOF = UserDefaults.standard.string(forKey: "iof"), let iof = nFormatter.number(from: sIOF)?.doubleValue else {return}
-        
-        
-//        if products.isEmpty == false {
-//            for Product in products {
-//                if let states = Product.states {
-//                    for state in states.allObjects {
-//                        let tax = (state as! State).tax
-//                        totalUS += Product.value
-//                        totalRS += calculator.calculate(productValue: Product.value, tax: tax/100, card: Product.card, iof: iof/100, dolar: dolar)
-//                    }
-//                }
-//            }
-//        }
-        if products.isEmpty == false {
-            for Product in products {
-                guard let tax = Product.states?.tax else {return}
-                totalUS += Product.value
-                totalRS += calculator.calculate(productValue: Product.value, tax: tax/100, card: Product.card, iof: iof/100, dolar: dolar)
-            }
-        }
-        
-        nFormatter.decimalSeparator = Locale(identifier: "EN").decimalSeparator
-        lbUS.text = nFormatter.string(from: NSNumber(value: totalUS))
-        nFormatter.decimalSeparator = Locale.current.decimalSeparator
-        lbRS.text = nFormatter.string(from: NSNumber(value: totalRS))
+        calculateValues()
     }
     
     // MARK: - Methods
@@ -83,6 +54,27 @@ class ValuesViewController: UIViewController {
         } catch {
             print(error.localizedDescription)
         }
+    }
+    
+    @objc func calculateValues() {
+        var totalUS = 0.0
+        var totalRS = 0.0
+        nFormatter.decimalSeparator = Locale.current.decimalSeparator
+        guard let sDolar = UserDefaults.standard.string(forKey: "dolar"), let dolar = nFormatter.number(from: sDolar)?.doubleValue else {return}
+        guard let sIOF = UserDefaults.standard.string(forKey: "iof"), let iof = nFormatter.number(from: sIOF)?.doubleValue else {return}
+        
+        if products.isEmpty == false {
+            for Product in products {
+                guard let tax = Product.states?.tax else {return}
+                totalUS += Product.value + (Product.value * tax/100)
+                totalRS += calculator.calculate(productValue: Product.value, tax: tax/100, card: Product.card, iof: iof/100, dolar: dolar)
+            }
+        }
+        
+        nFormatter.decimalSeparator = Locale(identifier: "EN").decimalSeparator
+        lbUS.text = nFormatter.string(from: NSNumber(value: totalUS))
+        nFormatter.decimalSeparator = Locale.current.decimalSeparator
+        lbRS.text = nFormatter.string(from: NSNumber(value: totalRS))
     }
     
 }
